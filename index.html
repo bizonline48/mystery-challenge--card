@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 1 Challenge</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .mystery-container {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            max-width: 700px;
+            width: 100%;
+            overflow: hidden;
+            animation: slideUp 0.8s ease-out;
+        }
+        
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #ff6b6b, #ffa726);
+            padding: 40px;
+            text-align: center;
+            color: white;
+        }
+        
+        .mystery-title {
+            font-size: 2.8rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .subtitle {
+            font-size: 1.3rem;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .clue-section {
+            background: #f0f4ff;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            border: 2px dashed #667eea;
+        }
+        
+        .clue-title {
+            font-size: 1.3rem;
+            color: #4a5568;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .clue-text {
+            color: #718096;
+            line-height: 1.5;
+            font-style: italic;
+        }
+        
+        .final-mystery {
+            background: linear-gradient(135deg, #ff6b6b, #ffa726);
+            color: white;
+            padding: 35px;
+            border-radius: 20px;
+            text-align: center;
+            margin-top: 30px;
+            box-shadow: 0 15px 30px rgba(255, 107, 107, 0.3);
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { box-shadow: 0 15px 30px rgba(255, 107, 107, 0.3); }
+            50% { box-shadow: 0 15px 40px rgba(255, 107, 107, 0.5); }
+            100% { box-shadow: 0 15px 30px rgba(255, 107, 107, 0.3); }
+        }
+        
+        .mystery-question {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .final-clue {
+            font-size: 1.2rem;
+            font-style: italic;
+            margin-bottom: 25px;
+            opacity: 0.9;
+            line-height: 1.4;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="mystery-container">
+        <div class="header">
+            <div class="mystery-title">🎯 WEEK 1 CHALLENGE!</div>
+            <div class="subtitle">Can you solve the mystery?</div>
+        </div>
+        
+        <div class="content">
+
+            <div class="final-mystery">
+                <div class="mystery-question">🕵️‍♀️ WHO AM I?</div>
+                <div class="final-clue">
+                    "I prove every day that reinvention has no expiration date. My mantra involves three words that start with H, H, and W. I work with tiny souls and older hearts 💕"
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
